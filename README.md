@@ -1,3 +1,9 @@
+#Open Server
+1. Open terminal and cd to folder path
+2. Run this command "python api.py"
+3. This message will appear so the sever is running
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+
 #Run on Postman
 
 1. Type url "http://127.0.0.1:5000/"
