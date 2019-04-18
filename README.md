@@ -1,9 +1,7 @@
-# Dimension-Assessment
-
-#Runing on Postman
-
-1. Type url "http://127.0.0.1:5000/" \n
-2. On body tap will appear json data \n
+#Run on Postman
+![alt text](https://github.com/gapprapp/Dimension-Assessment/blob/master/readme%20pic/postman.png)
+1. Type url "http://127.0.0.1:5000/"
+2. On body tap will appear json data
 
  /
   
@@ -30,4 +28,4 @@
 8. Type Value as "parameter"
 
 
-![alt text](https://github.com/gapprapp/Dimension-Assessment/blob/master/readme%20pic/postman.png)
+
