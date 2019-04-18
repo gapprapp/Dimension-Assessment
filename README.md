@@ -6,7 +6,7 @@
 
 #Run on Postman
 
-1. Type url "http://127.0.0.1:5000/"
+1. Past this url "http://127.0.0.1:5000/"
 2. On body tap will appear json data
 
  /
