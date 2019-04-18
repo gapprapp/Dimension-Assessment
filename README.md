@@ -2,11 +2,11 @@
 1. Open terminal and cd to folder path
 2. Run this command "python api.py"
 3. This message will appear so the sever is running
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Running on http://127.0.0.1:5000/
 
 #Run on Postman
 
-1. Past this url "http://127.0.0.1:5000/"
+1. Paste this url "http://127.0.0.1:5000/"
 2. On body tap will appear json data
 
  /
