@@ -20,6 +20,11 @@ class Index(Resource):
 				}
 			}
 		
+def recursion(num):
+	if num > 1:
+		return num * recursion(num-1)
+	else:
+		return num
 
 # FirstFactorial
 class FirstFactorial(Resource):
@@ -28,17 +33,12 @@ class FirstFactorial(Resource):
 
 		try:
 			num = int(args['input'])
-			sum = num
-			if num >=1 and num < 19 :
-				while num > 1 :
-					temp = num -1
-					sum = sum * temp
-					num = temp
-				return {'Input':{'input': int(args['input'])}, 'Output': {'output': sum}}
+			if num >= 1 and num <= 18:
+				return {'Input':{'input': int(args['input'])}, 'Output': {'output': recursion(num)}}
 			else:
 				return {'Input':{'input': int(args['input'])}, 'Output': {'output': "Invalid input..."}}
 		except Exception as e:
-			print("Invalid input...")
+			return {'Input':{'input': int(args['input'])}, 'Output': {'output': "Invalid input..."}}
 
 			## ## ## ## ##
 
@@ -63,6 +63,7 @@ class AlphabetSoup(Resource):
 		## ## ## ## ##
 
 api.add_resource(Index, '/')
+
 api.add_resource(FirstFactorial, '/api/firstfactorial/')
 api.add_resource(FirstReverse, '/api/firstreverse/')
 api.add_resource(AlphabetSoup, '/api/alphabetsoup/')
